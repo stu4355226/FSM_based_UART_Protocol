@@ -1,0 +1,62 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Fri Feb 05 15:32:11 2016
+# Process ID: 10264
+# Log file: C:/Users/LEE/Google ¶³ºÝµwºÐ/FIT/ECE5575 -VHDL/UART/project1/Q3/planAhead.log
+# Journal file: C:/Users/LEE/Google ¶³ºÝµwºÐ/FIT/ECE5575 -VHDL/UART/project1/Q3\planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+open_project {C:\Users\LEE\Google ¶³ºÝµwºÐ\FIT\ECE5575 -VHDL\UART\project1\Q3\project_5.ppr}
+Scanning sources...
+Finished scanning sources
+open_project: Time (s): elapsed = 00:00:11 . Memory (MB): peak = 418.422 ; gain = 70.629
+launch_chipscope_analyzer 
+INFO: [Chipscope 16-7] Launching ChipScope with command: analyzer.exe -project "C:/Users/LEE/Google ¶³ºÝµwºÐ/FIT/ECE5575 -VHDL/UART/project1/Q3/project_5.data/sources_1/cs/csdefaultproj.cpj" -bit_default "C:/Users/LEE/Google ¶³ºÝµwºÐ/FIT/ECE5575 -VHDL/UART/project1/Q3/project_5.runs/impl_1/UART.bit"
+launch_isim -simset sim_1 -mode behavioral
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle pa -incremental -L work -L secureip -o testbench.exe --prj C:/Users/LEE/Google ¶³ºÝµwºÐ/FIT/ECE5575 -VHDL/UART/project1/Q3/project_5.sim/sim_1/behav/testbench.prj -top work.testbench 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/PlanAhead/data/verilog/src/glbl.v" into library work
+Parsing VHDL file "C:/Users/LEE/Google ¶³ºÝµwºÐ/FIT/ECE5575 -VHDL/UART/project1/Q3/project_5.srcs/sources_1/imports/test/Transmitter.vhd" into library work
+Parsing VHDL file "C:/Users/LEE/Google ¶³ºÝµwºÐ/FIT/ECE5575 -VHDL/UART/project1/Q3/project_5.srcs/sources_1/imports/test/Receiver.vhd" into library work
+Parsing VHDL file "C:/Users/LEE/Google ¶³ºÝµwºÐ/FIT/ECE5575 -VHDL/UART/project1/Q3/project_5.srcs/sources_1/imports/test/FSM.vhd" into library work
+Parsing VHDL file "C:/Users/LEE/Google ¶³ºÝµwºÐ/FIT/ECE5575 -VHDL/UART/project1/Q3/project_5.srcs/sources_1/imports/test/FIFO.vhd" into library work
+Parsing VHDL file "C:/Users/LEE/Google ¶³ºÝµwºÐ/FIT/ECE5575 -VHDL/UART/project1/Q3/project_5.srcs/sources_1/imports/test/Baud_Generator.vhd" into library work
+Parsing VHDL file "C:/Users/LEE/Google ¶³ºÝµwºÐ/FIT/ECE5575 -VHDL/UART/project1/Q3/project_5.srcs/sources_1/imports/test/top.vhd" into library work
+Parsing VHDL file "C:/Users/LEE/Google ¶³ºÝµwºÐ/FIT/ECE5575 -VHDL/UART/project1/Q3/project_5.srcs/sim_1/imports/Question3/testbench.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package math_real
+Compiling package numeric_std
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling architecture arch of entity baud_Gen [\baud_Gen(6,54)\]
+Compiling architecture arch of entity uart_rx [\uart_rx(8,16)\]
+Compiling architecture behavioral of entity STD_FIFO [\STD_FIFO(8,256)\]
+Compiling architecture rtl of entity FSM [\FSM(8)\]
+Compiling architecture arch of entity uart_tx [\uart_tx(8,16)\]
+Compiling architecture behavior of entity UART [\UART(6,54,8,16,256,8)\]
+Compiling architecture arch of entity testbench
+Time Resolution for simulation is 1ps.
+Waiting for 5 sub-compilation(s) to finish...
+Compiled 19 VHDL Units
+Built simulation executable testbench.exe
+Fuse Memory Usage: 39136 KB
+Fuse CPU Usage: 888 ms
+INFO: [Runs 36-26] Fuse completed.
+INFO: [Runs 36-27] Launching ISim...
+INFO: [Runs 36-11] Running '"C:/Users/LEE/Google ¶³ºÝµwºÐ/FIT/ECE5575 -VHDL/UART/project1/Q3/project_5.sim/sim_1/behav/testbench.exe" -intstyle pa -gui -tclbatch isim.cmd -wdb "testbench.wdb" '
+launch_isim: Time (s): elapsed = 00:00:13 . Memory (MB): peak = 479.098 ; gain = 7.145
+exit
+INFO: [Common 17-206] Exiting PlanAhead at Fri Feb 05 15:42:41 2016...
+INFO: [Common 17-83] Releasing license: PlanAhead

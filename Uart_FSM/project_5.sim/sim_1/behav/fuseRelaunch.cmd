@@ -1,0 +1,1 @@
+-intstyle "pa" -incremental -L "work" -L "secureip" -o "testbench.exe" --prj "C:/Users/LEE/Google ¶³ºÝµwºÐ/FIT/ECE5575 -VHDL/UART/project1/Q3/project_5.sim/sim_1/behav/testbench.prj" -top "work.testbench" 

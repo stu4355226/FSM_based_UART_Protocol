@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DARoots Version="1" Minor="26">
+  <FileSet Name="sim_1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sim_1/imports/Question1-2/testbench.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Google 雲端硬碟/UART/Question1-2/testbench.vhd"/>
+        <Attr Name="ImportTime" Val="1430237976"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="testbench"/>
+      <Option Name="TopLib" Val="work"/>
+      <Option Name="TopArchitecture" Val="arch"/>
+      <Option Name="TopRTLFile" Val="$PSRCDIR/sim_1/imports/Question1-2/testbench.vhd"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+      <Option Name="SimulationRunTime" Val="10ms"/>
+      <Option Name="SrcSet" Val="sources_1"/>
+      <Option Name="NGOutputHDLFormat" Val="vhdl"/>
+    </Config>
+  </FileSet>
+</DARoots>

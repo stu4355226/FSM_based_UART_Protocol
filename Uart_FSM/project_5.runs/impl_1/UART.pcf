@@ -1,0 +1,11 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Fri Feb 05 14:09:06 2016
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "Y9" LEVEL 1;
+COMP "rx" LOCATE = SITE "V10" LEVEL 1;
+COMP "tx" LOCATE = SITE "W11" LEVEL 1;
+COMP "reset" LOCATE = SITE "F22" LEVEL 1;
+SCHEMATIC END;
+

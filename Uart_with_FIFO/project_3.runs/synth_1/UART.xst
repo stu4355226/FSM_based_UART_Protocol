@@ -1,0 +1,9 @@
+set -loop_iteration_limit 1000
+run
+-ifn UART.prj
+-top UART
+-p xc7z020clg484-1
+-ofn UART.ngc
+-opt_mode speed
+-opt_level 1
+-netlist_hierarchy rebuilt

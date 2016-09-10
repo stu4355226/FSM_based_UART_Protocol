@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DARoots Version="1" Minor="26">
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/Question1-2/Transmitter.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Google 雲端硬碟/UART/Question1-2/Transmitter.vhd"/>
+        <Attr Name="ImportTime" Val="1430086288"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Question1-2/Receiver.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Google 雲端硬碟/UART/Question1-2/Receiver.vhd"/>
+        <Attr Name="ImportTime" Val="1430086288"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Question1-2/FSM.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Google 雲端硬碟/UART/Question1-2/FSM.vhd"/>
+        <Attr Name="ImportTime" Val="1430257396"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Question1-2/FIFO.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Google 雲端硬碟/UART/Question1-2/FIFO.vhd"/>
+        <Attr Name="ImportTime" Val="1430164155"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Question1-2/Baud_Generator.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Google 雲端硬碟/UART/Question1-2/Baud_Generator.vhd"/>
+        <Attr Name="ImportTime" Val="1429996716"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Question1-2/top.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Google 雲端硬碟/UART/Question1-2/top.vhd"/>
+        <Attr Name="ImportTime" Val="1430237235"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="UART"/>
+      <Option Name="TopLib" Val="work"/>
+      <Option Name="TopArchitecture" Val="behavior"/>
+      <Option Name="TopRTLFile" Val="$PSRCDIR/sources_1/imports/Question1-2/top.vhd"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+</DARoots>

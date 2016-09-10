@@ -1,0 +1,8 @@
+vhdl work "C:/Users/LEE/Desktop/project_3/project_3.srcs/sources_1/imports/Question1-2/Transmitter.vhd"
+vhdl work "C:/Users/LEE/Desktop/project_3/project_3.srcs/sources_1/imports/Question1-2/Receiver.vhd"
+vhdl work "C:/Users/LEE/Desktop/project_3/project_3.srcs/sources_1/imports/Question1-2/FSM.vhd"
+vhdl work "C:/Users/LEE/Desktop/project_3/project_3.srcs/sources_1/imports/Question1-2/FIFO.vhd"
+vhdl work "C:/Users/LEE/Desktop/project_3/project_3.srcs/sources_1/imports/Question1-2/Baud_Generator.vhd"
+vhdl work "C:/Users/LEE/Desktop/project_3/project_3.srcs/sources_1/imports/Question1-2/top.vhd"
+vhdl work "C:/Users/LEE/Desktop/project_3/project_3.srcs/sim_1/imports/Question1-2/testbench.vhd"
+verilog work C:/Xilinx/14.7/ISE_DS/PlanAhead/data/verilog/src/glbl.v

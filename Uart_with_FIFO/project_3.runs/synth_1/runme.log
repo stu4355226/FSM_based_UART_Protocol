@@ -1,0 +1,385 @@
+
+*** Running xst
+    with args -ifn "UART.xst" -ofn "UART.srp" -intstyle ise
+
+Reading design: UART.prj
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:/Users/LEE/Desktop/project_3/project_3.srcs/sources_1/imports/Question1-2/Transmitter.vhd" into library work
+Parsing entity <uart_tx>.
+Parsing architecture <arch> of entity <uart_tx>.
+Parsing VHDL file "C:/Users/LEE/Desktop/project_3/project_3.srcs/sources_1/imports/Question1-2/Receiver.vhd" into library work
+Parsing entity <uart_rx>.
+Parsing architecture <arch> of entity <uart_rx>.
+Parsing VHDL file "C:/Users/LEE/Desktop/project_3/project_3.srcs/sources_1/imports/Question1-2/FSM.vhd" into library work
+Parsing entity <FSM>.
+Parsing architecture <RTL> of entity <fsm>.
+Parsing VHDL file "C:/Users/LEE/Desktop/project_3/project_3.srcs/sources_1/imports/Question1-2/FIFO.vhd" into library work
+Parsing entity <STD_FIFO>.
+Parsing architecture <Behavioral> of entity <std_fifo>.
+Parsing VHDL file "C:/Users/LEE/Desktop/project_3/project_3.srcs/sources_1/imports/Question1-2/Baud_Generator.vhd" into library work
+Parsing entity <baud_Gen>.
+Parsing architecture <arch> of entity <baud_gen>.
+Parsing VHDL file "C:/Users/LEE/Desktop/project_3/project_3.srcs/sources_1/imports/Question1-2/top.vhd" into library work
+Parsing entity <UART>.
+Parsing architecture <behavior> of entity <uart>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <UART> (architecture <behavior>) with generics from library <work>.
+
+Elaborating entity <baud_Gen> (architecture <arch>) with generics from library <work>.
+
+Elaborating entity <uart_rx> (architecture <arch>) with generics from library <work>.
+
+Elaborating entity <STD_FIFO> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <FSM> (architecture <RTL>) with generics from library <work>.
+
+Elaborating entity <uart_tx> (architecture <arch>) with generics from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <UART>.
+    Related source file is "C:/Users/LEE/Desktop/project_3/project_3.srcs/sources_1/imports/Question1-2/top.vhd".
+        N = 6
+        M = 54
+        DBIT = 8
+        SB_TICK = 16
+        FIFO_DEPTH = 256
+        W = 8
+INFO:Xst:3210 - "C:/Users/LEE/Desktop/project_3/project_3.srcs/sources_1/imports/Question1-2/top.vhd" line 105: Output port <q> of the instance <baud_gen1> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <UART> synthesized.
+
+Synthesizing Unit <baud_Gen>.
+    Related source file is "C:/Users/LEE/Desktop/project_3/project_3.srcs/sources_1/imports/Question1-2/Baud_Generator.vhd".
+        N = 6
+        M = 54
+    Found 6-bit register for signal <r_reg>.
+    Found 6-bit adder for signal <r_reg[5]_GND_5_o_add_2_OUT> created at line 1241.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   6 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <baud_Gen> synthesized.
+
+Synthesizing Unit <uart_rx>.
+    Related source file is "C:/Users/LEE/Desktop/project_3/project_3.srcs/sources_1/imports/Question1-2/Receiver.vhd".
+        DBIT = 8
+        SB_TICK = 16
+    Found 4-bit register for signal <s_reg>.
+    Found 3-bit register for signal <n_reg>.
+    Found 8-bit register for signal <b_reg>.
+    Found 2-bit register for signal <state_reg>.
+    Found finite state machine <FSM_0> for signal <state_reg>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 12                                             |
+    | Inputs             | 5                                              |
+    | Outputs            | 2                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | reset (positive)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 3-bit adder for signal <n_reg[2]_GND_6_o_add_16_OUT> created at line 1241.
+    Found 4-bit adder for signal <s_reg[3]_GND_6_o_add_29_OUT> created at line 1241.
+    Found 4-bit 4-to-1 multiplexer for signal <s_next> created at line 47.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  15 D-type flip-flop(s).
+	inferred  11 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <uart_rx> synthesized.
+
+Synthesizing Unit <STD_FIFO>.
+    Related source file is "C:/Users/LEE/Desktop/project_3/project_3.srcs/sources_1/imports/Question1-2/FIFO.vhd".
+        DATA_WIDTH = 8
+        FIFO_DEPTH = 256
+    Found 256x8-bit dual-port RAM <Mram_Memory> for signal <Memory>.
+    Found 8-bit register for signal <fifo_proc.Tail>.
+    Found 1-bit register for signal <fifo_proc.Looped>.
+    Found 1-bit register for signal <Full>.
+    Found 1-bit register for signal <Empty>.
+    Found 8-bit register for signal <DataOut>.
+    Found 8-bit register for signal <fifo_proc.Head>.
+    Found 8-bit adder for signal <fifo_proc.Tail[7]_GND_7_o_add_3_OUT> created at line 57.
+    Found 8-bit adder for signal <fifo_proc.Head[7]_GND_7_o_add_12_OUT> created at line 75.
+    Found 8-bit comparator not equal for signal <n0000> created at line 47
+    Found 8-bit comparator not equal for signal <n0015> created at line 65
+    Found 8-bit comparator equal for signal <fifo_proc.Tail[7]_fifo_proc.Head[7]_equal_17_o> created at line 81
+    Summary:
+	inferred   1 RAM(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred  27 D-type flip-flop(s).
+	inferred   3 Comparator(s).
+	inferred  14 Multiplexer(s).
+Unit <STD_FIFO> synthesized.
+
+Synthesizing Unit <FSM>.
+    Related source file is "C:/Users/LEE/Desktop/project_3/project_3.srcs/sources_1/imports/Question1-2/FSM.vhd".
+        DBIT = 8
+WARNING:Xst:647 - Input <full> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 2-bit register for signal <state_reg>.
+    Found finite state machine <FSM_1> for signal <state_reg>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 5                                              |
+    | Inputs             | 2                                              |
+    | Outputs            | 2                                              |
+    | Clock              | Clk (rising_edge)                              |
+    | Reset              | reset (positive)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred   2 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <FSM> synthesized.
+
+Synthesizing Unit <uart_tx>.
+    Related source file is "C:/Users/LEE/Desktop/project_3/project_3.srcs/sources_1/imports/Question1-2/Transmitter.vhd".
+        DBIT = 8
+        SB_TICK = 16
+    Found 1-bit register for signal <tx_reg>.
+    Found 4-bit register for signal <s_reg>.
+    Found 3-bit register for signal <n_reg>.
+    Found 8-bit register for signal <b_reg>.
+    Found 2-bit register for signal <state_reg>.
+    Found finite state machine <FSM_2> for signal <state_reg>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 12                                             |
+    | Inputs             | 4                                              |
+    | Outputs            | 2                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | reset (positive)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 3-bit adder for signal <n_reg[2]_GND_11_o_add_17_OUT> created at line 1241.
+    Found 4-bit adder for signal <s_reg[3]_GND_11_o_add_30_OUT> created at line 1241.
+    Found 4-bit 4-to-1 multiplexer for signal <s_next> created at line 52.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  16 D-type flip-flop(s).
+	inferred  10 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <uart_tx> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 256x8-bit dual-port RAM                               : 1
+# Adders/Subtractors                                   : 7
+ 3-bit adder                                           : 2
+ 4-bit adder                                           : 2
+ 6-bit adder                                           : 1
+ 8-bit adder                                           : 2
+# Registers                                            : 14
+ 1-bit register                                        : 4
+ 3-bit register                                        : 2
+ 4-bit register                                        : 2
+ 6-bit register                                        : 1
+ 8-bit register                                        : 5
+# Comparators                                          : 3
+ 8-bit comparator equal                                : 1
+ 8-bit comparator not equal                            : 2
+# Multiplexers                                         : 38
+ 1-bit 2-to-1 multiplexer                              : 13
+ 3-bit 2-to-1 multiplexer                              : 2
+ 4-bit 2-to-1 multiplexer                              : 12
+ 4-bit 4-to-1 multiplexer                              : 2
+ 6-bit 2-to-1 multiplexer                              : 1
+ 8-bit 2-to-1 multiplexer                              : 8
+# FSMs                                                 : 3
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <STD_FIFO>.
+INFO:Xst:3226 - The RAM <Mram_Memory> will be implemented as a BLOCK RAM, absorbing the following register(s): <DataOut>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 256-word x 8-bit                    |          |
+    |     mode           | read-first                          |          |
+    |     clkA           | connected to signal <CLK>           | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <fifo_proc.Head> |          |
+    |     diA            | connected to signal <DataIn>        |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 256-word x 8-bit                    |          |
+    |     mode           | write-first                         |          |
+    |     clkB           | connected to signal <CLK>           | rise     |
+    |     enB            | connected to internal node          | low      |
+    |     addrB          | connected to signal <fifo_proc.Tail> |          |
+    |     doB            | connected to signal <DataOut>       |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <STD_FIFO> synthesized (advanced).
+
+Synthesizing (advanced) Unit <baud_Gen>.
+The following registers are absorbed into counter <r_reg>: 1 register on signal <r_reg>.
+Unit <baud_Gen> synthesized (advanced).
+
+Synthesizing (advanced) Unit <uart_rx>.
+The following registers are absorbed into counter <n_reg>: 1 register on signal <n_reg>.
+Unit <uart_rx> synthesized (advanced).
+
+Synthesizing (advanced) Unit <uart_tx>.
+The following registers are absorbed into counter <n_reg>: 1 register on signal <n_reg>.
+Unit <uart_tx> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 256x8-bit dual-port block RAM                         : 1
+# Adders/Subtractors                                   : 4
+ 4-bit adder                                           : 2
+ 8-bit adder                                           : 2
+# Counters                                             : 3
+ 3-bit up counter                                      : 2
+ 6-bit up counter                                      : 1
+# Registers                                            : 44
+ Flip-Flops                                            : 44
+# Comparators                                          : 3
+ 8-bit comparator equal                                : 1
+ 8-bit comparator not equal                            : 2
+# Multiplexers                                         : 35
+ 1-bit 2-to-1 multiplexer                              : 13
+ 4-bit 2-to-1 multiplexer                              : 12
+ 4-bit 4-to-1 multiplexer                              : 2
+ 8-bit 2-to-1 multiplexer                              : 8
+# FSMs                                                 : 3
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_1> on signal <state_reg[1:2]> with user encoding.
+---------------------
+ State   | Encoding
+---------------------
+ idle    | 00
+ send    | 01
+ waitack | 10
+---------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <trans1/FSM_0> on signal <state_reg[1:2]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ idle  | 00
+ start | 01
+ data  | 11
+ stop  | 10
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <trans2/FSM_2> on signal <state_reg[1:2]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ idle  | 00
+ start | 01
+ data  | 11
+ stop  | 10
+-------------------
+
+Optimizing unit <UART> ...
+
+Optimizing unit <uart_rx> ...
+
+Optimizing unit <STD_FIFO> ...
+
+Optimizing unit <uart_tx> ...
+WARNING:Xst:2677 - Node <reg/Full> of sequential type is unconnected in block <UART>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 0) on block UART, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 61
+ Flip-Flops                                            : 61
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 62    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+reg/BUS_0018(reg/Mmux_BUS_001811:O)| NONE(reg/Mram_Memory)  | 2     |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 4.620ns (Maximum Frequency: 216.450MHz)
+   Minimum input arrival time before clock: 1.846ns
+   Maximum output required time after clock: 0.681ns
+   Maximum combinational path delay: No path found
+
+=========================================================================

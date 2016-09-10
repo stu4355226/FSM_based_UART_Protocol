@@ -1,0 +1,6 @@
+vhdl work "C:/Users/LEE/Desktop/project_3/project_3.srcs/sources_1/imports/Question1-2/Transmitter.vhd"
+vhdl work "C:/Users/LEE/Desktop/project_3/project_3.srcs/sources_1/imports/Question1-2/Receiver.vhd"
+vhdl work "C:/Users/LEE/Desktop/project_3/project_3.srcs/sources_1/imports/Question1-2/FSM.vhd"
+vhdl work "C:/Users/LEE/Desktop/project_3/project_3.srcs/sources_1/imports/Question1-2/FIFO.vhd"
+vhdl work "C:/Users/LEE/Desktop/project_3/project_3.srcs/sources_1/imports/Question1-2/Baud_Generator.vhd"
+vhdl work "C:/Users/LEE/Desktop/project_3/project_3.srcs/sources_1/imports/Question1-2/top.vhd"

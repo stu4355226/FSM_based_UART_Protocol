@@ -1,0 +1,12 @@
+Release 14.7 Drc P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Fri Feb 05 14:11:41 2016
+
+drc -z UART_routed.ncd UART.pcf
+
+WARNING:PhysDesignRules:2500 - This design does not have a PS7 block.
+   Instantiate the PS7 block in order to ensure proper fabric tie-offs and
+   correct operation of the processing_system7.
+DRC detected 0 errors and 1 warnings.  Please see the previously displayed
+individual error or warning messages for more details.

@@ -1,0 +1,8 @@
+INTSTYLE=pa
+INFILE=C:\Users\LEE\Google ¶³ºÝµwºÐ\FIT\ECE5575 -VHDL\UART\project1\Q3\project_5.runs\impl_1\UART_routed.ncd
+OUTFILE=C:\Users\LEE\Google ¶³ºÝµwºÐ\FIT\ECE5575 -VHDL\UART\project1\Q3\project_5.runs\impl_1\UART.bit
+FAMILY=Zynq
+PART=xc7z020-1clg484
+WORKINGDIR=C:\Users\LEE\Google ¶³ºÝµwºÐ\FIT\ECE5575 -VHDL\UART\project1\Q3\project_5.runs\impl_1
+LICENSE=WebPack
+USER_INFO=210993868_0_0_837

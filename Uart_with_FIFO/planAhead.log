@@ -1,0 +1,85 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Wed Apr 29 23:32:04 2015
+# Process ID: 63984
+# Log file: C:/Users/LEE/Desktop/project_3/planAhead.log
+# Journal file: C:/Users/LEE/Desktop/project_3\planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+open_project {C:\Users\LEE\Desktop\project_3\project_3.ppr}
+Scanning sources...
+Finished scanning sources
+reset_run synth_1
+launch_runs synth_1
+[Wed Apr 29 23:32:37 2015] Launched synth_1...
+Run output will be captured here: C:/Users/LEE/Desktop/project_3/project_3.runs/synth_1/runme.log
+launch_isim -simset sim_1 -mode behavioral
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle pa -incremental -L work -L secureip -o testbench.exe --prj C:/Users/LEE/Desktop/project_3/project_3.sim/sim_1/behav/testbench.prj -top work.testbench 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/PlanAhead/data/verilog/src/glbl.v" into library work
+Parsing VHDL file "C:/Users/LEE/Desktop/project_3/project_3.srcs/sources_1/imports/Question1-2/Transmitter.vhd" into library work
+Parsing VHDL file "C:/Users/LEE/Desktop/project_3/project_3.srcs/sources_1/imports/Question1-2/Receiver.vhd" into library work
+Parsing VHDL file "C:/Users/LEE/Desktop/project_3/project_3.srcs/sources_1/imports/Question1-2/FSM.vhd" into library work
+Parsing VHDL file "C:/Users/LEE/Desktop/project_3/project_3.srcs/sources_1/imports/Question1-2/FIFO.vhd" into library work
+Parsing VHDL file "C:/Users/LEE/Desktop/project_3/project_3.srcs/sources_1/imports/Question1-2/Baud_Generator.vhd" into library work
+Parsing VHDL file "C:/Users/LEE/Desktop/project_3/project_3.srcs/sources_1/imports/Question1-2/top.vhd" into library work
+Parsing VHDL file "C:/Users/LEE/Desktop/project_3/project_3.srcs/sim_1/imports/Question1-2/testbench.vhd" into library work
+ERROR:HDLCompiler:806 - "C:/Users/LEE/Desktop/project_3/project_3.srcs/sim_1/imports/Question1-2/testbench.vhd" Line 268: Syntax error near "if".
+ERROR:HDLCompiler:806 - "C:/Users/LEE/Desktop/project_3/project_3.srcs/sim_1/imports/Question1-2/testbench.vhd" Line 270: Syntax error near "else".
+ERROR:HDLCompiler:806 - "C:/Users/LEE/Desktop/project_3/project_3.srcs/sim_1/imports/Question1-2/testbench.vhd" Line 272: Syntax error near "if".
+WARNING:HDLCompiler:1369 - "C:/Users/LEE/Desktop/project_3/project_3.srcs/sim_1/imports/Question1-2/testbench.vhd" Line 257: Possible infinite loop; process does not have a wait statement
+ERROR:HDLCompiler:854 - "C:/Users/LEE/Desktop/project_3/project_3.srcs/sim_1/imports/Question1-2/testbench.vhd" Line 19: Unit <arch> ignored due to previous errors.
+VHDL file C:/Users/LEE/Desktop/project_3/project_3.srcs/sim_1/imports/Question1-2/testbench.vhd ignored due to errors
+ERROR: [Runs 36-25] Fuse application returned error(s). Please see 'C:/Users/LEE/Desktop/project_3/project_3.sim/sim_1/behav/fuse.log' file for more details.
+ERROR: [Common 17-39] 'launch_isim' failed due to earlier errors.
+launch_isim -simset sim_1 -mode behavioral
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle pa -incremental -L work -L secureip -o testbench.exe --prj C:/Users/LEE/Desktop/project_3/project_3.sim/sim_1/behav/testbench.prj -top work.testbench 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/PlanAhead/data/verilog/src/glbl.v" into library work
+Parsing VHDL file "C:/Users/LEE/Desktop/project_3/project_3.srcs/sources_1/imports/Question1-2/Transmitter.vhd" into library work
+Parsing VHDL file "C:/Users/LEE/Desktop/project_3/project_3.srcs/sources_1/imports/Question1-2/Receiver.vhd" into library work
+Parsing VHDL file "C:/Users/LEE/Desktop/project_3/project_3.srcs/sources_1/imports/Question1-2/FSM.vhd" into library work
+Parsing VHDL file "C:/Users/LEE/Desktop/project_3/project_3.srcs/sources_1/imports/Question1-2/FIFO.vhd" into library work
+Parsing VHDL file "C:/Users/LEE/Desktop/project_3/project_3.srcs/sources_1/imports/Question1-2/Baud_Generator.vhd" into library work
+Parsing VHDL file "C:/Users/LEE/Desktop/project_3/project_3.srcs/sources_1/imports/Question1-2/top.vhd" into library work
+Parsing VHDL file "C:/Users/LEE/Desktop/project_3/project_3.srcs/sim_1/imports/Question1-2/testbench.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package math_real
+Compiling package numeric_std
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling architecture arch of entity baud_Gen [\baud_Gen(6,54)\]
+Compiling architecture arch of entity uart_rx [\uart_rx(8,16)\]
+Compiling architecture behavioral of entity STD_FIFO [\STD_FIFO(8,256)\]
+Compiling architecture rtl of entity FSM [\FSM(8)\]
+Compiling architecture arch of entity uart_tx [\uart_tx(8,16)\]
+Compiling architecture behavior of entity UART [\UART(6,54,8,16,256,8)\]
+Compiling architecture arch of entity testbench
+Time Resolution for simulation is 1ps.
+Waiting for 5 sub-compilation(s) to finish...
+Compiled 19 VHDL Units
+Built simulation executable testbench.exe
+Fuse Memory Usage: 38976 KB
+Fuse CPU Usage: 701 ms
+INFO: [Runs 36-26] Fuse completed.
+INFO: [Runs 36-27] Launching ISim...
+INFO: [Runs 36-11] Running '"C:/Users/LEE/Desktop/project_3/project_3.sim/sim_1/behav/testbench.exe" -intstyle pa -gui -tclbatch isim.cmd -wdb "testbench.wdb" '
+launch_isim: Time (s): elapsed = 00:00:05 . Memory (MB): peak = 465.953 ; gain = 0.375
+exit
+INFO: [Common 17-206] Exiting PlanAhead at Wed Apr 29 23:43:43 2015...
+INFO: [Common 17-83] Releasing license: PlanAhead

@@ -1,0 +1,29 @@
+ISim log file
+Running: C:/Users/LEE/Desktop/project_3/project_3.sim/sim_1/behav/testbench.exe -intstyle pa -gui -tclbatch isim.cmd -wdb testbench.wdb 
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 10ms
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /testbench/u_uart/baud_gen1/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+at 0 ps, Instance /testbench/u_uart/baud_gen1/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Finished circuit initialization process.
+at 5 ns(2), Instance /testbench/u_uart/baud_gen1/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+at 5 ns(2), Instance /testbench/u_uart/baud_gen1/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 10ms
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /testbench/u_uart/baud_gen1/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+at 0 ps, Instance /testbench/u_uart/baud_gen1/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Finished circuit initialization process.
+at 5 ns(2), Instance /testbench/u_uart/baud_gen1/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+at 5 ns(2), Instance /testbench/u_uart/baud_gen1/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
