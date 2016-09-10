@@ -11,6 +11,7 @@ Target
 Plateform: Xilinx planahead 14.7   
 Board: Xilinx Zynq-7000 SoC (Zedboard)
 Language: VHDL   
+You can use Termite.exe to communicate with the board.
     
 Schematic
 -------------
@@ -22,6 +23,10 @@ I'm using only a FIFO and a FSM to control the FIFO whenever to send or store th
 In the project3, I added a mask to classify data into 4 classes – class1,2,3 and 4 (not valid data).    
 for each package recivied , output  "data","=", "class1-4","return","return" in sequence.    
      
+Flow chart
+-------------
+![flow_chart](/Images/flow_chart.jpg)
+    
 Simulation
 -------------
 for project 1
@@ -32,7 +37,7 @@ The wr_ptr receive data from rd_ptr.
 ![Simulation](/Images/project1.jpg)
 
 
-for project 3    
+For project 3    
 When the first data comes in, output will poop the data for five stages, which are:   
 1. data    
 2. “=” in ASCII    
