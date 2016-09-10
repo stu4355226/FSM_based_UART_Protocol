@@ -6,3 +6,4 @@ Plateform: Xilinx planahead 14.7
 Language: VHDL   
 Schematic
 -------------
+![Schematic](/Images/schmatic.jpg)
