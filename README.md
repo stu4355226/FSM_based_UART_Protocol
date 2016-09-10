@@ -17,7 +17,7 @@ Schematic
 -------------
 ![Schematic](/Images/schmatic.jpg)
 
-This UART using FIFO as a buffer sending files between TX(Sender) and Rx(Reciver).    
+This UART is using FIFO as a buffer sending files between TX(Sender) and Rx(Reciver).    
 In general cases, UART will use two FIFO buffers to store and send the queuing data,    
 I'm using only a FIFO and a FSM to control the FIFO whenever to send or store the queuing data.    
 In the project3, I added a mask to classify data into 4 classes – class1,2,3 and 4 (not valid data).    
