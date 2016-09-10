@@ -9,7 +9,7 @@ Email: stu4355226@gmail.com
 Target   
 -------------
 Plateform: Xilinx planahead 14.7   
-Board: Xilinx Zynq-7000 SoC (Zedboard)
+Board: Xilinx Zynq-7000 SoC (Zedboard)    
 Language: VHDL   
 You can use Termite.exe to communicate with the board.
     
