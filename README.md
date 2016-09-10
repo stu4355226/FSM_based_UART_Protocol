@@ -1,8 +1,7 @@
 # UART_VHDL
 UART_interface using VHDL on Xilinx Zynq - 7000 SoC (Zedboard). 
-UART_VHDL
-=============
+Target
+-------------
 Plateform: Xilinx planahead 14.7
-
-This is an H2
+Language: VHDL
 -------------
