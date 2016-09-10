@@ -8,7 +8,7 @@ Email: stu4355226@gmail.com
     
 Target   
 -------------
-Platform: Xilinx planahead 14.7   
+Platform: Xilinx Planahead 14.7   
 Board: Xilinx Zynq-7000 SoC (Zedboard)    
 Language: VHDL   
 You can use Termite.exe to communicate with the board.
@@ -29,10 +29,10 @@ Flow chart
     
 Simulation
 -------------
-for project 1
+For project 1,
 whenever the empty signal in FSM is 1, RX signal will receive the data from FIFO,  
 then wait for the TX sends THE tx_done_tick signal back, then receives the next data.   
-The wr_ptr receive data from rd_ptr.
+The wr_ptr signal receives data from rd_ptr signal.
 
 ![Simulation](/Images/project1.jpg)
 
@@ -46,23 +46,23 @@ When the first data comes in, output will poop the data for five stages, which a
 5. “return” in ASCII    
 Then, it will send the next data in.    
 
-stage1: poop data from FIFO to TX.    
+Stage1: poop data from FIFO to TX.    
 The data din(“ 10011000”) comes in, so the dout (“10011000”) pop to Tx.     
      
 ![Simulation](/Images/project3_1.jpg)
     
-stage2: pooping "=". Then FSM is popping “00111101” which is “=” in ASCII code.
+Stage2: pooping "=". Then FSM is popping “00111101” which is “=” in ASCII code.
     
 ![Simulation](/Images/project3_2.jpg)
    
-stage3: classifying . Then FSM is popping “00110100” which is “34” in ASCII code.
+Stage3: classifying . Then FSM is popping “00110100” which is “34” in ASCII code.
     
 ![Simulation](/Images/project3_3.jpg)
    
-stage4: pooping "return" . Then FSM is popping “00001101” which is “0D” in ASCII code.
+Stage4: pooping "return" . Then FSM is popping “00001101” which is “0D” in ASCII code.
     
 ![Simulation](/Images/project3_4.jpg)
    
-stage5: pooping "return" . Then FSM is popping “00001101” which is “0D” in ASCII code.
+Stage5: pooping "return" . Then FSM is popping “00001101” which is “0D” in ASCII code.
     
 ![Simulation](/Images/project3_5.jpg)
