@@ -1,5 +1,5 @@
-# UART_VHDL
-UART_interface using VHDL on Xilinx Zynq - 7000 SoC (Zedboard). 
+# FSM_based_UART_Protocol
+UART Protocol using VHDL on Xilinx Zynq - 7000 SoC (Zedboard). 
 Author    
 -------------
 CHIA-CHE, LEE   
